@@ -1,42 +1,39 @@
-book = Book.objects.create(title="The Great Gatsby", author="F. Scott Fitzgerald", publication_year=1925)
+from bookshelf.models import Book
+
+book = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
 
 book
 
-# <Book: The Great Gatsby>
+# <Book: 1984>
 
+from bookshelf.models import Book
+
+book = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
+
+book
+
+# <Book: 1984>
 
 Book.objects.all()
 
-# <QuerySet [<Book: The Great Gatsby>]>
+# <QuerySet [<Book: 1984>]>
 
-book = Book.objects.get(title="The Great Gatsby")
+book = Book.objects.get(title="1984")
 
 book.title, book.author, book.publication_year
 
-# ('The Great Gatsby', 'F. Scott Fitzgerald', 1925)
+# ('1984', 'George Orwell', 1949)
 
-ook.title = "Dune"
+book.title = "Nineteen Eighty-Four"
 
 book.save()
 
 book.title
 
-# 'Dune'
-
-# Delete Book
-
-from bookshelf.models import Book
-
-book = Book.objects.create(title="The Great Gatsby", author="F. Scott Fitzgerald", publication_year=1925)
-
-book
-
-\# <Book: The Great Gatsby>
-
-
+# 'Nineteen Eighty-Four'
 
 book.delete()
 
 Book.objects.all()
 
-\# <QuerySet \[]>
+# <QuerySet []>

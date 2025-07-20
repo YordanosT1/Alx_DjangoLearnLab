@@ -2,15 +2,19 @@
 
 from bookshelf.models import Book
 
-book = Book.objects.create(title="The Great Gatsby", author="F. Scott Fitzgerald", publication_year=1925)
+book = Book.objects.create(title="1984", author="George Orwell", publication\_year=1949)
 
 book
 
-\# <Book: The Great Gatsby>
+\# <Book: 1984>
 
 
 
 book.delete()
+
+Book.objects.all()
+
+\# <QuerySet \[]>
 
 Book.objects.all()
 

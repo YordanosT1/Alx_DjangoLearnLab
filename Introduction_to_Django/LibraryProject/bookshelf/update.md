@@ -1,7 +1,7 @@
-book.title = "Dune"
+bbook.title = "Nineteen Eighty-Four"
 
 book.save()
 
 book.title
 
-# 'Dune'
+# 'Nineteen Eighty-Four'

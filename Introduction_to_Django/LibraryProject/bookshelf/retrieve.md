@@ -1,9 +1,9 @@
 Book.objects.all()
 
-# <QuerySet [<Book: The Great Gatsby>]>
+# <QuerySet [<Book: 1984>]>
 
-book = Book.objects.get(title="The Great Gatsby")
+book = Book.objects.get(title="1984")
 
 book.title, book.author, book.publication_year
 
-# ('The Great Gatsby', 'F. Scott Fitzgerald', 1925)
+# ('1984', 'George Orwell', 1949)
