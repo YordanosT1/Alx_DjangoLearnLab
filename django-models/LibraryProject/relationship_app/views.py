@@ -8,6 +8,7 @@ from .models import UserProfile
 from django.contrib.auth.decorators import permission_required
 from django.shortcuts import get_object_or_404
 from .forms import BookForm
+from .models import Library, Book, UserProfile
 
 
 
