@@ -1,5 +1,5 @@
 <h1>Introduction to Django</h1>
-<i>This repository has all tasks done for the hadns on prodjects under introduction to django module.<i>
+<i>This repository has all tasks done for the hadns on prodjects under introduction to django module.</i>
 Welcome to the “Introduction to Django” project. This project is tailored for you to help you gain hands-on experience with Django, one of the most popular web frameworks for building robust web applications. Throughout this project, you will set up a Django development environment, learn about Django models and ORM, and explore the Django admin interface.
 <h2>Objectives</h2>
 <h3>1. Set Up Django Development Environment:</h3>
