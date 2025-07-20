@@ -8,8 +8,8 @@ urlpatterns = [
     path('books/', views.list_books, name='list_books'),
     path('library/<int:pk>/', views.LibraryDetailView.as_view(), name='library_detail'),
     path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),  # or use LoginView
-    path('logout/', views.logout, name='logout'),  # or use LogoutView
+    path('login/', LoginView.as_view.login, template_name='login'),  # or use view.login
+    path('logout/', LogoutView.as_view.logout, template_name='logout') #use view.logout
 
     # Role-specific views
     path('admin-view/', views.admin_view, name='admin_view'),
