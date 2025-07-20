@@ -7,9 +7,9 @@ urlpatterns = [
     path('', views.list_books, name='home'),
     path('books/', views.list_books, name='list_books'),
     path('library/<int:pk>/', views.LibraryDetailView.as_view(), name='library_detail'),
+    path('login/', LoginView.as_view(template_name='relationship_app/login.html'), redirect_authenticated_user=True, name='login'),
+    path('logout/', LogoutView.as_view(template_name='relationship_app/logout.html'), redirect_authenticated_user=True, name='logout'),
     path('register/', views.register, name='register'),
-    path('login/', LoginView.as_view.login, template_name='login'),  # or use view.login
-    path('logout/', LogoutView.as_view.logout, template_name='logout') #use view.logout
 
     # Role-specific views
     path('admin-view/', views.admin_view, name='admin_view'),
