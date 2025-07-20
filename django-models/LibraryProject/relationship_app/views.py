@@ -1,14 +1,14 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import login
-from django.contrib.auth.forms import UserCreationForm
-from .models import Book, Library  # import your models if needed
-from django.views.generic.detail import DetailView
-from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import UserProfile
-from django.contrib.auth.decorators import permission_required
-from django.shortcuts import get_object_or_404
-from .forms import BookForm
+from django.shortcuts import render, get_object_or_404
 from .models import Library, Book, UserProfile
+from django.contrib.auth.views import LoginView, LogoutView
+from django.views.generic import CreateView
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.contrib.auth import login
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import user_passes_test, login_required
+from django.contrib import messages
+from django.contrib.auth.decorators import permission_required
 from django.views.generic.detail import DetailView
 from django.views.generic.detail import list_books
 
